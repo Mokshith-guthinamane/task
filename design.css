@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background: #888;
+    padding: 15px 0;
+}
+
+.men {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.men li {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background: #eef6fb;
+}
+
+.card {
+    flex: 1;
+    min-height: 500px;
+}
+
+.image1 {
+    background: url("taskimg.jpg") center/cover no-repeat;
+}
+
+.image2 {
+    background: url("taskimg2.jpg") center/cover no-repeat;
+}
+
+.content {
+    background: #ff8250;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box {
+    background: #888;
+    padding: 30px;
+    color: #fff;
+    width: 70%;
+}
+
+.content-box button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .men {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 8px 12px;
+    }
+
+    .men li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 8px;
+        font-size: 18px;
+    }
+
+    .card {
+        min-height: 220px;
+    }
+
+    .content-box {
+        width: 100%;
+        padding: 20px;
+    }
+}
